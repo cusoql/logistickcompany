@@ -4,8 +4,8 @@
   "outputDirectory": "dist/app",
   "framework": "vite",
   "routes": [
-    { "src": "/app/(.*)", "dest": "/app/$1" },
     { "src": "/app", "dest": "/app/index.html" },
+    { "src": "/app/(.*)", "dest": "/app/index.html" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
