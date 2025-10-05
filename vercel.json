@@ -1,11 +1,8 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
+  "outputDirectory": "dist/app",
   "framework": "vite",
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "dist/app/**", "use": "@vercel/static" }
-  ],
   "routes": [
     { "src": "/app", "dest": "/dist/app/index.html" },
     { "src": "/app/(.*)", "dest": "/dist/app/index.html" },
